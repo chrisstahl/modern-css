@@ -1,4 +1,8 @@
-![](https://res.cloudinary.com/wesbos/image/upload/v1515524452/GRID-social-share_wlfzk3.png)
+# Modern CSS lunch-n-learn
+
+-------------------------------------------
+Everything below here belongs to Wes Bos
+-------------------------------------------
 
 # CSS Grid Video Course
 
