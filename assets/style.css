@@ -1,0 +1,44 @@
+:root {
+  --yellow: #ffc600;
+  --green: #0f9b0f;
+  --black: #272727;
+  --white: #efefef;
+  --deepblue: #0f0f9b;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 900;
+  font-size: 10px;
+  color: var(--white);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/269209/textMap1.svg"),
+    linear-gradient(110deg, var(--black), var(--green));
+  background-size: 90vw, auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 100px);
+  margin: 50px;
+}
+
+.item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgba(0, 0, 0, 0.03);
+  border-radius: 3px;
+  font-size: 35px;
+  background-color: var(--deepblue);
+}
+
