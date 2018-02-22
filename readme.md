@@ -1,73 +1,23 @@
 # Modern CSS lunch-n-learn
 
--------------------------------------------
-Everything below here belongs to Wes Bos
--------------------------------------------
+These are the "pre-reqs" for the lunch-n-learn
+* [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/) - This isn't a **requirement** but there are some great tools for viewing layout in Firefox Developer Edition that just aren't available or as easy to use in Chrome or Edge. If you don't want to use this, but do want to use the browser-sync module, you'll need to make a change to the package.json file so that you point to your browser of choice.
+* [Visual Studio Code](https://code.visualstudio.com/) - Again, not a requirement but it has [emmet](https://emmet.io/) which makes creating multiple DOM elements easy. I'll give you some code snippets as we go.
+* [NodeJS](https://nodejs.org/en/) - Still not a requirement. However, it means you can use browser-sync so that you see your changes as soon as you save your file instead of having to refresh the page.
 
-# CSS Grid Video Course
+## **REQUIREMENT**
+I created a small repo with some startup files so that we can get up and running quickly. Please fork the repo to your own account before cloning.\
+[https://github.com/chrisstahl/modern-css](https://github.com/chrisstahl/modern-css)
 
-Hey! These are the starter files and finished solutions. Grab the full course over at [CSSGrid.io](https://CSSGrid.io).
+## browser-sync
+To wire up browser-sync, in your terminal or command prompt navigate to where you cloned your repo. (e.g. /Users/yourAccountName/Documents/modern-css) \
+Type\
+`npm install`\
+So long as you aren't having proxy issues, it should download all of your node modules (browser-sync has a few dependencies).\
+Then type\
+`npm start`\
+This should launch your browser and show you a file structure! \
+Open **01 - Setup** and click **test.html**
 
-## Course FAQ
-
-### Q: I'm getting Browsersync Couldn't open browser (if you are using BrowserSync in a headless environment, you might want to set the open option to false)
-
-This is because some versions of Firefox are "FirefoxDeveloperEdition" and some new downloads are "Firefox Developer Edition". If you had downloaded the browser before the course, just remove the spaces from the package.json command so it says "FirefoxDeveloperEdition"
-
-### Q: I can't see the lines / numbers of Firefox' CSS Grid Inspection Tools
-
-Make sure to turn off both "Use recommended performance settings" & "Use hardware acceleration when available“ within Preferences > Performance
-
-## Community CSS Grid Content
-
-Feel free to submit a PR adding a link to your own recaps, guides or reviews!
-
-* [Course Review](https://www.bencodezen.io/blog/review-css-grid-with-wes-bos/) by [@bencodezen](https://www.twitter.com/bencodezen)
-
-## A note on Pull Requests
-
-These are meant to be 1:1 copies of what is done in the video. If you found a better / different way to do things, great, but I will be keeping them the same as the videos.
-
-The starter files + solutions will be updated if/when the videos are updated.
-
-Thanks!
-
-## Live editable examples
-
-I recommend you use the files in the repo, but if you prefer to use JSFiddle instead, here are all the starter files ready to go:
-
-02. [Starter Files and Tooling Setup](https://jsfiddle.net/6qvwur9q/)
-03. [CSS Grid Fundamentals](https://jsfiddle.net/qxxpgg4j/)
-04. [CSS Grid Dev Tools](https://jsfiddle.net/b55x8vh2/)
-05. [CSS Grid Implicit vs Explicit Tracks](https://jsfiddle.net/mon8xdgb/)
-06. [CSS grid-auto-flow Explained](https://jsfiddle.net/Loq4uj16/)
-07. [Sizing tracks in CSS Grid](https://jsfiddle.net/q8h3r8yb/)
-08. [CSS Grid repeat function](https://jsfiddle.net/8f8xyx86/)
-09. [Sizing Grid Items](https://jsfiddle.net/wqs6tcuk/)
-10. [Placing Grid Items](https://jsfiddle.net/hs5xhvpp/)
-11. [Spanning and Placing Cardio](https://jsfiddle.net/2z7z6o9k/)
-12. [auto-fit and auto-fill](https://jsfiddle.net/d1pLngzx/)
-13. [Using minmax() for Responsive Grids](https://jsfiddle.net/xthszm2j/)
-14. Grid Template Areas: 
-    - [Area Line Names](https://jsfiddle.net/tkyxomht/)
-    - [Areas](https://jsfiddle.net/p0sn7L7v/)
-15. [Naming Lines in CSS Grid](https://jsfiddle.net/ygpmn0xh/)
-16. [grid-auto-flow dense Block Fitting](https://jsfiddle.net/sxj83p70/)
-17. [CSS Grid Alignment + Centering](https://jsfiddle.net/eyL9a2gv/)
-18. [Re-ordering Grid Items](https://jsfiddle.net/uscf9mk0/)
-19. [Nesting Grid with Album Layouts](https://jsfiddle.net/yn7jak0y/)
-20. [CSS Grid Image Gallery](https://jsfiddle.net/cbjzped2/)
-21. Flexbox vs CSS Grid: 
-    - [Axis Flipping](https://jsfiddle.net/pt8hym9s/)
-    - [Controls on Right](https://jsfiddle.net/4o7gavuj/)
-    - [Flex on Item](https://jsfiddle.net/1u264ftd/)
-    - [Perfectly Centered](https://jsfiddle.net/sgbrtrjo/)
-    - [Self Control](https://jsfiddle.net/c6gg8pkn/)
-    - [Stacked Layout](https://jsfiddle.net/mnfm1sw0/)
-    - [Unknown Content Size](https://jsfiddle.net/4ze02bkj/)
-    - [Unknown Number of Items](https://jsfiddle.net/Lg7r3jmy/)
-    - [Variable Widths on Each Row](https://jsfiddle.net/qymhootd/)
-22. [Recreating Codepen](https://jsfiddle.net/br6n54qt/)
-23. [Bootstrappy Grid with CSS Variables](https://jsfiddle.net/gLLht2hd/)
-24. [Responisve Website](https://jsfiddle.net/bh16ofp8/)
-25. [Full Bleed Blog Layout](https://jsfiddle.net/j8w6v3mh/)
+You should see:\
+![Hello, World!](https://s3-us-west-2.amazonaws.com/s.cdpn.io/269209/hello_world.png)
