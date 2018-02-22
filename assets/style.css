@@ -3,7 +3,9 @@
   --green: #0f9b0f;
   --black: #272727;
   --white: #efefef;
-  --deepblue: #0f0f9b;
+  --blue: #0f0f9b;
+  --red: #9b0f0f;
+  --smokedGlass: rgba(25,25,25,.75);
 }
 
 html {
@@ -23,13 +25,17 @@ html {
 }
 
 body {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/269209/textMap1.svg"),
-    linear-gradient(110deg, var(--black), var(--green));
-  background-size: 90vw, auto;
+  background-image: linear-gradient(110deg, var(--black), var(--green));
+  background-size: 100vw, auto;
   background-position: center;
   background-repeat: no-repeat;
   min-height: calc(100vh - 100px);
   margin: 50px;
+}
+
+.hello-world {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/269209/textMap1.svg"),
+    linear-gradient(110deg, var(--black), var(--green));
 }
 
 .item {
@@ -42,3 +48,8 @@ body {
   background-color: var(--deepblue);
 }
 
+a[href="."] {
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--white);
+}

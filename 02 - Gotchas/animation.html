@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/style.css">
+  <title>Transform versus height manipulation</title>
+</head>
+
+<style>
+  .ball-box {
+    height: 25vw;
+    width: 25vw;
+    display: inline-block;
+  }
+
+  .ball {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    border-radius: 50%;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-name: scaling-height;
+    background-color: var(--white);
+  }
+
+  @keyframes scaling-height {
+    0% {
+      height: 100%;
+      width: 100%;
+    }
+    50% {
+      height: 25%;
+      width: 25%;
+    }
+    100% {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  @keyframes scaling-transform {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(.25, .25);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+</style>
+
+<body>
+  <div class="ball-box">
+    <div class="ball"></div>
+  </div>
+  <div class="ball-box">
+    <div class="ball"></div>
+  </div>
+  <div class="ball-box">
+    <div class="ball"></div>
+  </div>
+  <div class="ball-box">
+    <div class="ball"></div>
+  </div>
+  <div class="ball-box">
+    <div class="ball"></div>
+  </div>
+  <div class="ball-box">
+    <div class="ball"></div>
+  </div>
+  <div class="ball-box">
+    <div class="ball"></div>
+  </div>
+  <div class="ball-box">
+    <div class="ball"></div>
+  </div>
+  <div class="ball-box">
+    <div class="ball"></div>
+  </div>
+  <div class="ball-box">
+    <div class="ball"></div>
+  </div>
+  <div class="ball-box">
+    <div class="ball"></div>
+  </div>
+  <div class="ball-box">
+    <div class="ball"></div>
+  </div>
+
+</body>
+
+</html>
